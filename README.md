@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-# ${1:Steel & Pipes - eCommerce Mark-up}
+# Steel & Pipes - eCommerce Mark-up
 A mark-up for the Steel & Pipe's eCommerce Platform
 ## Installation
 TODO: Describe the installation process
