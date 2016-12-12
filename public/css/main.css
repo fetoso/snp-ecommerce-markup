@@ -379,6 +379,137 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
           background-color: #fed700;
           border-color: #fed700; }
 
+.content-area {
+  width: 100%; }
+  .content-area .checkout-detail header {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 30px; }
+    .content-area .checkout-detail header .title {
+      line-height: 2;
+      height: 59px;
+      font-size: 2.857em;
+      letter-spacing: -0.025em; }
+  .content-area .checkout-detail .mail-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+    .content-area .checkout-detail .mail-details .billing-details {
+      width: 50%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .content-area .checkout-detail .mail-details .billing-details header {
+        border-bottom: 0.5px solid #ccc;
+        width: 100%;
+        height: 60px; }
+        .content-area .checkout-detail .mail-details .billing-details header div {
+          line-height: 3;
+          height: 59px;
+          float: left;
+          font-size: 20px;
+          border-bottom: 2px solid #ffeb4d; }
+      .content-area .checkout-detail .mail-details .billing-details .form-double-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch; }
+        .content-area .checkout-detail .mail-details .billing-details .form-double-row .form-row:first-child {
+          padding-right: 30px; }
+      .content-area .checkout-detail .mail-details .billing-details .form-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 15px 0; }
+        .content-area .checkout-detail .mail-details .billing-details .form-row input {
+          margin-top: 15px; }
+    .content-area .checkout-detail .mail-details .shipping-details {
+      width: 50%;
+      padding: 15px; }
+      .content-area .checkout-detail .mail-details .shipping-details header {
+        border-bottom: 0.5px solid #ccc;
+        width: 100%;
+        height: 60px; }
+        .content-area .checkout-detail .mail-details .shipping-details header div {
+          line-height: 3;
+          height: 59px;
+          float: left;
+          font-size: 20px;
+          border-bottom: 2px solid #ffeb4d; }
+      .content-area .checkout-detail .mail-details .shipping-details .form-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 15px 0;
+        margin: 15px 0; }
+        .content-area .checkout-detail .mail-details .shipping-details .form-row textarea {
+          margin-top: 15px;
+          min-height: 10em; }
+  .content-area .checkout-detail .order-details {
+    width: 100%;
+    padding: 15px; }
+    .content-area .checkout-detail .order-details header {
+      border-bottom: 0.5px solid #ccc;
+      width: 100%;
+      height: 60px; }
+      .content-area .checkout-detail .order-details header div {
+        line-height: 3;
+        height: 59px;
+        float: left;
+        font-size: 20px;
+        border-bottom: 2px solid #ffeb4d; }
+    .content-area .checkout-detail .order-details .checkout-review-order table {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 1.236rem;
+      text-align: left; }
+      .content-area .checkout-detail .order-details .checkout-review-order table th, .content-area .checkout-detail .order-details .checkout-review-order table td {
+        padding: 0.75rem;
+        line-height: 1.5;
+        vertical-align: top;
+        border-top: 1px solid #eceeef; }
+      .content-area .checkout-detail .order-details .checkout-review-order table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #eceeef; }
+      .content-area .checkout-detail .order-details .checkout-review-order table tbody td td {
+        padding: 0.75rem;
+        line-height: 1.5;
+        vertical-align: top;
+        border-top: 1px solid #eceeef; }
+    .content-area .checkout-detail .order-details .checkout-review-order .checkout-payment {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      border-top: 1px solid #ccc; }
+      .content-area .checkout-detail .order-details .checkout-review-order .checkout-payment .payment_method {
+        padding: 20px 15px;
+        border-bottom: 0.5px dotted #ccc; }
+        .content-area .checkout-detail .order-details .checkout-review-order .checkout-payment .payment_method img {
+          width: 60px;
+          position: absolute;
+          left: 85%; }
+      .content-area .checkout-detail .order-details .checkout-review-order .checkout-payment .payment_method.payment_box {
+        background: rgba(0, 0, 0, 0.035);
+        padding: 15px; }
+      .content-area .checkout-detail .order-details .checkout-review-order .checkout-payment .payment_check {
+        padding: 20px 15px; }
+      .content-area .checkout-detail .order-details .checkout-review-order .checkout-payment .payment-button {
+        border: none;
+        background-color: #ffeb4d;
+        color: #334141;
+        border-radius: 40px;
+        font-size: 20px;
+        padding: 15px;
+        font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
 .customcut-modal {
   display: block;
   border: 2px solid #fff;

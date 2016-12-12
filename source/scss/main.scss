@@ -449,7 +449,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
         padding-top: 5.714em;
         border-top: 1px solid $light-grey;
         margin-bottom: 30px;
-        
+
         .checkout-button {
           font-size: 16px;
           border-radius: 1.571em;
@@ -532,6 +532,195 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 
 
 // // CART AREA
+
+
+// CHECKOUT AREA
+.content-area {
+  width: 100%;
+
+  .checkout-detail {
+
+    header {
+      width: 100%;
+      height: 60px;
+      text-align: center;
+      margin-bottom: 30px;
+
+      .title {
+        line-height: 2;
+        height: 59px;
+        font-size: 2.857em;
+        letter-spacing: -0.025em;
+      }
+    }
+
+    .mail-details {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      .billing-details {
+        width: 50%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        header {
+          border-bottom: .5px solid $light-grey;
+          width: 100%;
+          height: 60px;
+
+          div {
+            line-height: 3;
+            height: 59px;
+            float: left;
+            font-size: 20px;
+            border-bottom: 2px solid $snp-yellow;
+          }
+        }
+
+        .form-double-row {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: stretch;
+          .form-row:first-child {
+            padding-right: 30px;
+          }
+        }
+
+        .form-row {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: stretch;
+          padding: 15px 0;
+          input {
+            margin-top: 15px;
+          }
+        }
+      }
+      .shipping-details {
+        width: 50%;
+        padding: 15px;
+
+        header {
+          border-bottom: .5px solid $light-grey;
+          width: 100%;
+          height: 60px;
+
+          div {
+            line-height: 3;
+            height: 59px;
+            float: left;
+            font-size: 20px;
+            border-bottom: 2px solid $snp-yellow;
+          }
+        }
+        .form-row {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: stretch;
+          padding: 15px 0;
+          margin: 15px 0;
+          textarea {
+            margin-top: 15px;
+            min-height: 10em;
+          }
+        }
+      }
+    }
+    .order-details {
+      width: 100%;
+      padding: 15px;
+
+      header {
+        border-bottom: .5px solid $light-grey;
+        width: 100%;
+        height: 60px;
+
+        div {
+          line-height: 3;
+          height: 59px;
+          float: left;
+          font-size: 20px;
+          border-bottom: 2px solid $snp-yellow;
+        }
+      }
+      .checkout-review-order {
+        table {
+          width: 100%;
+          max-width: 100%;
+          margin-bottom: 1.236rem;
+          text-align: left;
+          th, td {
+            padding: 0.75rem;
+            line-height: 1.5;
+            vertical-align: top;
+            border-top: 1px solid #eceeef;
+          }
+          thead {
+            th {
+              vertical-align: bottom;
+              border-bottom: 2px solid #eceeef;
+            }
+          }
+          tbody {
+            td {
+              td {
+                padding: 0.75rem;
+                line-height: 1.5;
+                vertical-align: top;
+                border-top: 1px solid #eceeef;
+              }
+            }
+          }
+        }
+        .checkout-payment {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: stretch;
+          border-top: 1px solid $light-grey;
+
+          .payment_method {
+            padding: 20px 15px;
+            border-bottom: .5px dotted $light-grey;
+            img {
+              width: 60px;
+              position: absolute;
+              left: 85%;
+            }
+          }
+          .payment_method.payment_box {
+            background: rgba(0, 0, 0, 0.035);
+            padding: 15px;
+          }
+          .payment_check {
+            padding: 20px 15px;
+          }
+          .payment-button {
+            border: none;
+            background-color: $snp-yellow;
+            color: $snp-black;
+            border-radius: 40px;
+            font-size: 20px;
+            padding: 15px;
+            font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
+
+// // CHECKOUT AREA
+
 
 // MODAL COMPONENT
 
