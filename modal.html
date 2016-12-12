@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US" itemscope="itemscope">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>S&P</title>
+
+        <link rel="stylesheet" type="text/css" href="public/css/main.css" media="all" />
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,700italic,800,800italic,600italic,400italic,300italic' rel='stylesheet' type='text/css'>
+
+        <link rel="shortcut icon" href="assets/images/fav-icon.png">
+    </head>
+
+    <body>
+        <!-- MODAL COMPONENT -->
+
+        <div class="customcut-modal">
+          <div class="customcut-header">
+            <span class="customcut-title">Custom Cut</span>
+            <a href="#" class="close-button" role="button">
+              <span>×</span>
+            </a>
+          </div>
+          <div class="customcut-content">
+            <form>
+              <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                <tbody>
+                  <tr>
+                    <td colspan="2" style="font-weight:bold;">Quantity</td>
+                    <td colspan="5" style="text-align: center">Length in Feet, Inches and Fraction of Inch</td>
+                  </tr>
+                  <tr>
+                    <td width="75"><input type="text" name="custom[qty][]" class="qty" value="" style="width:75px;"></td>
+                    <td width="40">PCS</td>
+                    <td class="foot_td" width="75"><input type="text" name="custom[ft][]" class="foot" value="" style="width:75px;" placeholder="Ft."></td>
+                    <td width="20">FT</td>
+                    <td class="inches_td" width="60"><input type="text" name="custom[in][]" class="inches" value="" style="width:75px;" placeholder="Inches"></td>
+                    <td width="20">and</td>
+                    <td class="fraction_td" width="60">
+                      <select name="custom[infr][]" class="fraction">
+                      <option value="0">--</option>
+                      <option value="0.125">1/8</option>
+                      <option value="0.25">1/4</option>
+                      <option value="0.375">3/8</option>
+                      <option value="0.5">1/2</option>
+                      <option value="0.625">5/8</option>
+                      <option value="0.75">3/4</option>
+                      <option value="0.875">7/8</option>
+                    </select>
+                    </td>
+                    <td width="20">IN</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr class="hidden" style="display: table-row;">
+                    <td><input type="text" name="custom[qty][]" class="qty" value="" style="width:75px;"></td>
+                    <td>PCS</td>
+                    <td class="foot_td"><input type="text" name="custom[ft][]" class="foot" value="" style="width:75px;" placeholder="Ft."></td>
+                    <td>FT</td>
+                    <td class="inches_td"><input type="text" name="custom[in][]" class="inches" value="" style="width:75px;" placeholder="Inches"></td>
+                    <td>and</td>
+                    <td class="fraction_td">
+                      <select name="custom[infr][]" class="fraction">
+                      <option value="0">--</option>
+                      <option value="0.125">1/8</option>
+                      <option value="0.25">1/4</option>
+                      <option value="0.375">3/8</option>
+                      <option value="0.5">1/2</option>
+                      <option value="0.625">5/8</option>
+                      <option value="0.75">3/4</option>
+                      <option value="0.875">7/8</option>
+                    </select>
+                    </td>
+                    <td>IN</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr class="hidden" style="display: table-row;">
+                    <td><input type="text" name="custom[qty][]" class="qty" value="" style="width:75px;"></td>
+                    <td>PCS</td>
+                    <td class="foot_td"><input type="text" name="custom[ft][]" class="foot" value="" style="width:75px;" placeholder="Ft."></td>
+                    <td>FT</td>
+                    <td class="inches_td"><input type="text" name="custom[in][]" class="inches" value="" style="width:75px;" placeholder="Inches"></td>
+                    <td>and</td>
+                    <td class="fraction_td">
+                      <select name="custom[infr][]" class="fraction">
+                        <option value="0">--</option>
+                        <option value="0.125">1/8</option>
+                        <option value="0.25">1/4</option>
+                        <option value="0.375">3/8</option>
+                        <option value="0.5">1/2</option>
+                        <option value="0.625">5/8</option>
+                        <option value="0.75">3/4</option>
+                        <option value="0.875">7/8</option>
+                      </select>
+                    </td>
+                    <td>IN</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+              <input type="hidden" name="i" value="addCustomCut">
+              <input type="hidden" class="product_id" name="product_id" value="1682">
+              <input type="hidden" class="cart_item_id" name="cart_item_id" value="false">
+            </form>
+            <div style="font-size:11px;margin-top:10px;">
+              <strong>Custom cut tolerances = plus / minus 1/16"</strong><br>
+              <span style="color:#999999;">Call Us for Mitering and Large Quantities.</span>
+            </div>
+            <div class="notice" style="padding-top: 25px">
+              <strong>NOTICE:</strong>
+              Custom Cut material is non-returnable and not cancelable once processing <br>  begins. Custom cutting may require additional processing time.
+            </div>
+          </div>
+          <div class="customcut-footer">
+            <div class="customcut-buttons">
+              <button type="button" class="customcut-cancel" role="button" aria-disabled="false">
+                <span class="ui-button-text">Cancelar</span>
+              </button>
+              <button type="button" class="customcut-quote" role="button" aria-disabled="false">
+                <span class="add-to-cart ui-button-text">Cotizar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- // MODAL COMPONENT -->
+
+    </body>
+</html>

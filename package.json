@@ -1,0 +1,25 @@
+{
+  "name": "snp-ecommerce-markup",
+  "version": "1.0.0",
+  "description": " # Steel & Pipes - eCommerce Mark-up A mark-up for the Steel & Pipe's eCommerce Platform ## Installation TODO: Describe the installation process ## Usage TODO: Write usage instructions ## Contributing 1. Fork it! 2. Create your feature branch: `git checkout -b my-new-feature` 3. Commit your changes: `git commit -am 'Add some feature'` 4. Push to the branch: `git push origin my-new-feature` 5. Submit a pull request",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build-css": "./bin/build-css",
+    "markup": "./bin/watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fetoso/snp-ecommerce-markup.git"
+  },
+  "author": "Víctor J. Villamil Aponte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fetoso/snp-ecommerce-markup/issues"
+  },
+  "homepage": "https://github.com/fetoso/snp-ecommerce-markup#readme",
+  "devDependencies": {
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0"
+  }
+}
