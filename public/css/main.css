@@ -531,18 +531,75 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     .customcut-modal .customcut-header .close-button {
       float: right;
       background-color: #fff;
-      height: 30px;
+      height: 25px;
       width: 30px;
+      font-size: 16px;
       border-radius: 5px;
-      padding: 3px 10px 5px 10px; }
-      .customcut-modal .customcut-header .close-button span {
-        color: #aaa; }
+      color: #aaa;
+      text-align: center;
+      padding-top: 4px; }
   .customcut-modal .customcut-content {
     width: auto;
     min-height: 50px;
     height: auto;
     padding: 0 15px; }
-    .customcut-modal .customcut-content input {
+    .customcut-modal .customcut-content .cut-header {
+      height: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 12px; }
+      .customcut-modal .customcut-content .cut-header .cut-header-quantity {
+        width: 25%; }
+      .customcut-modal .customcut-content .cut-header .cut-header-desc {
+        width: 75%;
+        padding-left: 15px; }
+    .customcut-modal .customcut-content .cut-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; }
+      .customcut-modal .customcut-content .cut-list .cut-item {
+        height: 60px;
+        display: flex;
+        justify-content: flex-start; }
+        .customcut-modal .customcut-content .cut-list .cut-item .cut-title {
+          display: none; }
+        .customcut-modal .customcut-content .cut-list .cut-item input, .customcut-modal .customcut-content .cut-list .cut-item select, .customcut-modal .customcut-content .cut-list .cut-item .cut-label {
+          margin-right: 10px; }
+        .customcut-modal .customcut-content .cut-list .cut-item input {
+          width: 75px; }
+        .customcut-modal .customcut-content .cut-list .cut-item .cut-item-quantity {
+          width: 25%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; }
+        .customcut-modal .customcut-content .cut-list .cut-item .cut-item-desc {
+          width: 75%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding-left: 15px;
+          border-left: 1px solid #ccc; }
+    .customcut-modal .customcut-content .cut-plus {
+      float: right;
+      width: 15%;
+      margin-top: 15px;
+      background-color: #fff;
+      color: #999;
+      border: 1px solid #ccc;
+      font-size: 22px;
+      text-align: center;
+      border-radius: 20px; }
+    .customcut-modal .customcut-content .cut-tolerance {
+      font-size: 11px;
+      margin-top: 10px;
+      font-style: italic;
+      color: #ccc; }
+    .customcut-modal .customcut-content .cut-notice {
+      padding-top: 25px; }
+    .customcut-modal .customcut-content input, .customcut-modal .customcut-content select {
       background-color: #fff;
       height: 34px;
       border-radius: 40px;
@@ -551,6 +608,15 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     padding: 15px; }
     .customcut-modal .customcut-footer .customcut-buttons {
       text-align: right; }
+      .customcut-modal .customcut-footer .customcut-buttons button {
+        font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        border-radius: 1.571em;
+        padding: 1.036em 2.134em;
+        border-width: 0;
+        display: inline-block;
+        color: #334141;
+        background-color: #efecec;
+        border-color: #efecec; }
       .customcut-modal .customcut-footer .customcut-buttons .customcut-cancel {
         border: .5px solid #aaa !important;
         background-color: #fff !important;
@@ -561,7 +627,6 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
         .customcut-modal .customcut-footer .customcut-buttons .customcut-quote .add-to-cart::before {
           font: normal normal normal 14px/1 font-electro;
           margin-right: 6px;
-          content: "\61";
           vertical-align: middle; }
 
 @media (min-width: 544px) {
@@ -635,6 +700,28 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
       left: 78%; } }
 
 @media (max-width: 767px) {
+  .customcut-modal .customcut-content .cut-header {
+    display: none; }
+    .customcut-modal .customcut-content .cut-header .cut-header-desc {
+      padding-left: 0; }
+  .customcut-modal .customcut-content .cut-list .cut-item {
+    margin-top: 15px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .customcut-modal .customcut-content .cut-list .cut-item .cut-title {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 12px; }
+    .customcut-modal .customcut-content .cut-list .cut-item .cut-item-quantity {
+      margin-bottom: 15px; }
+    .customcut-modal .customcut-content .cut-list .cut-item .cut-item-desc {
+      padding-bottom: 15px;
+      width: 100%;
+      padding-left: 0;
+      border-left: 0;
+      border-bottom: 1px solid #ccc; }
   .content-area .checkout-detail .mail-details {
     flex-direction: column; }
     .content-area .checkout-detail .mail-details .billing-details,
