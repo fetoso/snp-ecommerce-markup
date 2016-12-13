@@ -897,8 +897,98 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
       max-width: 1200px;
   }
 }
-@media (min-width: 768px) {
-  .media-body .col-md-6 {
-    width: 50% !important
+@media (max-width: 991px) {
+  .content-area {
+    .checkout-detail {
+      .mail-details {
+        .billing-details {
+          .form-double-row {
+            flex-direction: column;
+            .form-row:first-child {
+              padding-right: 30px;
+            }
+          }
+        }
+      }
+      .order-details {
+        padding: 0;
+
+        .checkout-review-order {
+          .checkout-payment {
+            .payment_method {
+              img {
+                left: 78%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .content-area {
+    .checkout-detail {
+      .mail-details {
+        flex-direction: column;
+        .billing-details,
+        .shipping-details {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    }
+  }
+  table.cart {
+    thead {
+      display: none;
+    }
+    tr.cart_item:first-child {
+      td {
+        padding-top: 1.029em !important;
+      }
+    }
+    tr.cart_item {
+      border-bottom: 1px solid #eaeaea;
+      display: block;
+
+      td {
+        text-align: right;
+        display: block;
+      }
+
+      td.product-name:before,
+      td.product-price:before,
+      td.product-quantity:before,
+      td.product-subtotal:before {
+        content: attr(data-title) ": ";
+        float: left;
+        font-weight: 700;
+      }
+
+      td.product-thumbnail,
+      td.actions,
+      td.order-actions {
+        text-align: left;
+      }
+      td.product-thumbnail {
+        display: none;
+      }
+      td.product-quantity {
+        height: 20px;
+        .quantity.buttons_added {
+          float: right;
+        }
+      }
+    }
+  }
+  .content-area {
+    .cart-detail {
+      .cart-collaterals {
+        .cart_totals {
+          width: 100%;
+        }
+      }
+    }
   }
 }

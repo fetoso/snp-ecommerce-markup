@@ -624,6 +624,49 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
   .container {
     max-width: 1200px; } }
 
-@media (min-width: 768px) {
-  .media-body .col-md-6 {
-    width: 50% !important; } }
+@media (max-width: 991px) {
+  .content-area .checkout-detail .mail-details .billing-details .form-double-row {
+    flex-direction: column; }
+    .content-area .checkout-detail .mail-details .billing-details .form-double-row .form-row:first-child {
+      padding-right: 30px; }
+  .content-area .checkout-detail .order-details {
+    padding: 0; }
+    .content-area .checkout-detail .order-details .checkout-review-order .checkout-payment .payment_method img {
+      left: 78%; } }
+
+@media (max-width: 767px) {
+  .content-area .checkout-detail .mail-details {
+    flex-direction: column; }
+    .content-area .checkout-detail .mail-details .billing-details,
+    .content-area .checkout-detail .mail-details .shipping-details {
+      width: 100%;
+      padding: 0; }
+  table.cart thead {
+    display: none; }
+  table.cart tr.cart_item:first-child td {
+    padding-top: 1.029em !important; }
+  table.cart tr.cart_item {
+    border-bottom: 1px solid #eaeaea;
+    display: block; }
+    table.cart tr.cart_item td {
+      text-align: right;
+      display: block; }
+    table.cart tr.cart_item td.product-name:before,
+    table.cart tr.cart_item td.product-price:before,
+    table.cart tr.cart_item td.product-quantity:before,
+    table.cart tr.cart_item td.product-subtotal:before {
+      content: attr(data-title) ": ";
+      float: left;
+      font-weight: 700; }
+    table.cart tr.cart_item td.product-thumbnail,
+    table.cart tr.cart_item td.actions,
+    table.cart tr.cart_item td.order-actions {
+      text-align: left; }
+    table.cart tr.cart_item td.product-thumbnail {
+      display: none; }
+    table.cart tr.cart_item td.product-quantity {
+      height: 20px; }
+      table.cart tr.cart_item td.product-quantity .quantity.buttons_added {
+        float: right; }
+  .content-area .cart-detail .cart-collaterals .cart_totals {
+    width: 100%; } }
