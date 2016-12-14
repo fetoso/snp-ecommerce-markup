@@ -102,13 +102,13 @@
                             </div>
 
                             <div class="page-bar">
-                                <div class="pagination">
+                                <!-- <div class="pagination">
                                     <form>
                                       <input type="number" value="1" />
                                     </form>
                                     of 2
                                     <a class="next page-numbers" href="#">&rarr;</a>
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="list-content">
@@ -121,15 +121,17 @@
                                         </a>
                                     </div>
                                     <div class="desc-container">
-                                        <span>
+                                        <!-- <span>
                                           <a rel="tag" href="#">Structural Steel</a>
-                                        </span>
+                                        </span> -->
                                         <a href="#">
                                           <h3>B1357 A36/A572-50 Steel I Beam</h3>
                                           <div class="product-description">
                                               <p>
-                                                Description:<br/>
-                                                Esta es la descripcion de la barra de acero que esta mostrada arriba que como pueden ver, tiene forma de H o I. ¿Cual prefieres?
+                                                  S 3 x 5.7 lb
+                                                  (3.00" x .170" x 2.33")
+                                                  <br/>
+                                                  weight (lb. / ft.): 6:00
                                               </p>
                                           </div>
                                           <div class="product-availability">
@@ -138,12 +140,21 @@
                                         </a>
                                     </div>
                                     <div class="control-container">
-                                      <div class="control-corte">
-                                        <select>
+                                      <div class="control-form">
+                                        <select class="control-corte">
                                             <option value="menu_order"  selected='selected'>Corte</option>
+                                			      <option value="5">5 Ft.</option>
+                                            <option value="10">10 Ft.</option>
+                                            <option value="20">20 Ft.</option>
+                                            <option value="custom">Cut to Size</option>
                                         </select>
+                                        <div class="quantity buttons_added">
+                                            <input type="button" class="minus" value="-">
+                                            <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="cart[a431d70133ef6cf688bc4f6093922b48][qty]" max="30" min="0" step="1">
+                                            <input type="button" class="plus" value="+">
+                                        </div>
+                                        <!-- <input name="quantity" class="control-cantidad" placeholder="Cantidad"/> -->
                                       </div>
-                                      <input name="quantity" class="control-cantidad" placeholder="Cantidad"/>
                                       <a href="compare.html" class="quote-button">Cotizar</a>
                                     </div>
                                 </div>
@@ -157,9 +168,9 @@
                                         </a>
                                     </div>
                                     <div class="desc-container">
-                                        <span>
+                                        <!-- <span>
                                           <a rel="tag" href="#">Structural Steel</a>
-                                        </span>
+                                        </span> -->
                                         <a href="#">
                                           <h3>B1357 A36/A572-50 Steel I Beam</h3>
                                           <div class="product-description">
@@ -174,23 +185,36 @@
                                         </a>
                                     </div>
                                     <div class="control-container">
-                                      <div class="control-corte">
-                                        <select>
+                                      <div class="control-form">
+                                        <select class="control-corte">
                                             <option value="menu_order"  selected='selected'>Corte</option>
+                                			      <option value="5">5 Ft.</option>
+                                            <option value="10">10 Ft.</option>
+                                            <option value="20">20 Ft.</option>
+                                            <option value="custom">Cut to Size</option>
                                         </select>
+                                        <div class="quantity buttons_added">
+                                            <input type="button" class="minus" value="-">
+                                            <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="cart[a431d70133ef6cf688bc4f6093922b48][qty]" max="30" min="0" step="1">
+                                            <input type="button" class="plus" value="+">
+                                        </div>
+                                        <!-- <input name="quantity" class="control-cantidad" placeholder="Cantidad"/> -->
                                       </div>
-                                      <input name="quantity" class="control-cantidad" placeholder="Cantidad"/>
+
                                       <a href="compare.html" class="quote-button">Cotizar</a>
                                     </div>
                                 </div>
                                 <!-- // ITEM COMPONENT -->
 
                             </div>
+                            <div class="page-footer-text">
+                              <p>Showing 1&ndash;15 of 20 results</p>
+                            </div>
                             <div class="page-footer">
                                 <div class="show-items-select">
                                     <select class="electro-wc-wppp-select c-select" onchange="this.form.submit()" name="ppp"><option selected="selected" value="15">Show 15</option><option value="-1">Show All</option></select>
                                 </div>
-                                <p>Showing 1&ndash;15 of 20 results</p>
+
                                 <div class="page-numbers">
                                   <div class="page-number current">1</div>
                                   <div class="page-number"><a href="#">2</a></div>

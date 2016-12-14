@@ -76,9 +76,12 @@
             <div class="site-content">
                 <div class="container">
                     <div class="content-area">
+                      <header>
+                          <div class="title">Cart</div>
+                      </header>
                       <section class="cart-detail">
                             <header>
-                                <div class="title">Cart</div>
+                                <div class="title">Order Details</div>
                             </header>
 
                   					<form>
@@ -86,10 +89,12 @@
                                     <thead>
                                         <tr>
                                             <th class="product-remove">&nbsp;</th>
-                                            <th class="product-thumbnail">&nbsp;</th>
-                                            <th class="product-name">Product</th>
-                                            <th class="product-price">Price</th>
                                             <th class="product-quantity">Quantity</th>
+                                            <th class="product-id">Stock Id</th>
+                                            <th class="product-desc">Description</th>
+                                            <th class="product-size">Size</th>
+                                            <th class="product-status">Status</th>
+                                            <th class="product-price">Price</th>
                                             <th class="product-subtotal">Total</th>
                                         </tr>
                                     </thead>
@@ -98,14 +103,35 @@
                                             <td class="product-remove">
                                                 <a class="remove" href="#">×</a>
                                             </td>
-                                            <td class="product-thumbnail">
-                                                <a href="single-product.html"><img width="180" height="180" src="assets/images/products/2.jpg" alt=""></a>
+                                            <td data-title="Quantity" class="product-quantity">
+                                                <div class="quantity buttons_added"><input type="button" class="minus" value="-">
+                                                    <label>Quantity:</label>
+                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="cart[92f54963fc39a9d87c2253186808ea61][qty]" max="29" min="0" step="1">
+                                                    <input type="button" class="plus" value="+">
+                                                </div>
                                             </td>
-                                            <td data-title="Product" class="product-name">
-                                                <a href="single-product.html">Wireless Audio System Multiroom 360</a>
+                                            <td data-title="Stock Id" class="product-id">
+                                                <a href="#">R.02.AS10I3</a>
+                                            </td>
+                                            <td data-title="Details" class="product-desc">
+                                                <a href="#">MTI ALUM CONDENSG UNIT SINGLE  I-BEAM 3'<br/>14.007 lb</a>
+                                            </td>
+                                            <td data-title="Size" class="product-size">
+                                                <a href="#">4' 5 1/4"</a>
+                                            </td>
+                                            <td data-title="Status" class="product-status">
+                                                In Stock
                                             </td>
                                             <td data-title="Price" class="product-price">
                                                 <span class="amount">$1,999.00</span>
+                                            </td>
+                                            <td data-title="Total" class="product-subtotal">
+                                                <span class="amount">$1,999.00</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="cart_item">
+                                            <td class="product-remove">
+                                                <a class="remove" href="#">×</a>
                                             </td>
                                             <td data-title="Quantity" class="product-quantity">
                                                 <div class="quantity buttons_added"><input type="button" class="minus" value="-">
@@ -114,42 +140,27 @@
                                                     <input type="button" class="plus" value="+">
                                                 </div>
                                             </td>
+                                            <td data-title="Stock Id" class="product-id">
+                                                <a href="#">R.02.AS10I3</a>
+                                            </td>
+                                            <td data-title="Details" class="product-desc">
+                                                <a href="#">MTI ALUM CONDENSG UNIT SINGLE  I-BEAM 3'<br/>14.007 lb</a>
+                                            </td>
+                                            <td data-title="Size" class="product-size">
+                                                <a href="#">4' 5 1/4"</a>
+                                            </td>
+                                            <td data-title="Status" class="product-status">
+                                                In Stock
+                                            </td>
+                                            <td data-title="Price" class="product-price">
+                                                <span class="amount">$1,999.00</span>
+                                            </td>
                                             <td data-title="Total" class="product-subtotal">
                                                 <span class="amount">$1,999.00</span>
                                             </td>
                                         </tr>
-                                        <tr class="cart_item">
-
-                                            <td class="product-remove">
-                                                <a data-product_sku="5487FB8/26" data-product_id="2606" title="Remove this item" class="remove" href="#">×</a>
-                                            </td>
-
-                                            <td class="product-thumbnail">
-                                                <a href="single-product.html"><img width="180" height="180" alt="LaptopYoga" class="wp-post-image" src="assets/images/products/1.jpg"></a>
-                                            </td>
-
-                                            <td data-title="Product" class="product-name">
-                                                <a href="single-product.html">Tablet White EliteBook  Revolve 810 G2</a>
-                                            </td>
-
-                                            <td data-title="Price" class="product-price">
-                                                <span class="amount">$1,300.00</span>
-                                            </td>
-
-                                            <td data-title="Quantity" class="product-quantity">
-                                                <div class="quantity buttons_added"><input type="button" class="minus" value="-">
-                                                    <label>Quantity:</label>
-                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="cart[a431d70133ef6cf688bc4f6093922b48][qty]" max="30" min="0" step="1">
-                                                    <input type="button" class="plus" value="+">
-                                                </div>
-                                            </td>
-
-                                            <td data-title="Total" class="product-subtotal">
-                                                <span class="amount">$1,300.00</span>
-                                            </td>
-                                        </tr>
                                         <tr>
-                                            <td class="actions" colspan="6">
+                                            <td class="actions" colspan="8">
 
                                                 <a class="checkout-button" href="checkout.html">Proceed to Checkout</a>
 
